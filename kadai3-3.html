@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ja">
     <head>
-        <meta charset="urf-8">
+        <meta charset="utf-8">
         <title>演習課題3-3</title>
     </head>
     <body>
@@ -12,7 +12,10 @@
             members["J001"] = "情報次郎";
             members["J002"] = "設計士郎";
 
-            // ここに一覧を表示する処理を書く
+            for (let key in members) {
+            	if (members.hasOwnProperty(key)) {
+			        console.log(key + ": " + members[key]);
+
         </script>
     </body>
 </html>
